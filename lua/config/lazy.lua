@@ -52,3 +52,12 @@ require("lazy").setup({
     },
   },
 })
+
+require("lazy").setup({
+  spec = {
+    { "LazyVim/LazyVim", import = "lazyvim.plugins" },
+    -- Import the docker extra here:
+    { import = "lazyvim.plugins.extras.lang.docker" },
+    { import = "plugins" },
+  },
+})

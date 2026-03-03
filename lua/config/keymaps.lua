@@ -36,3 +36,25 @@ end)
 vim.keymap.set("n", "<C-S-N>", function()
   harpoon:list():next()
 end)
+
+-- Next buffer
+vim.keymap.set("n", "<S-l>", "<cmd>bnext<CR>", { desc = "Next buffer" })
+
+-- Previous buffer
+vim.keymap.set("n", "<S-h>", "<cmd>bprev<CR>", { desc = "Previous buffer" })
+
+-- Close buffer
+vim.keymap.set("n", "<leader>bd", "<cmd>bdelete<CR>", { desc = "Delete buffer" })
+
+-- split
+-- Horizontal split
+vim.keymap.set("n", "<leader>wh", "<cmd>split<CR>", { desc = "Split horizontal" })
+
+-- Vertical split
+vim.keymap.set("n", "<leader>wv", "<cmd>vsplit<CR>", { desc = "Split vertical" })
+
+-- Equalize splits
+vim.keymap.set("n", "<leader>we", "<C-w>=", { desc = "Equalize splits" })
+
+-- Close split
+vim.keymap.set("n", "<leader>wx", "<cmd>close<CR>", { desc = "Close split" })
